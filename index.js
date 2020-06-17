@@ -20,7 +20,7 @@ app.use(express.static("view"));
 app.use(bodyparser.json());
 
 //INIT ROUTES
-app.use("/api", require("./routes/api"));
+app.use("/api", require("./controller/ninjaController"));
 
 //ERROR HANDLING MIDWARE
 app.use((err, req, res, next) => {
